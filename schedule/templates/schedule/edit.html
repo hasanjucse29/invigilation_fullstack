@@ -6,14 +6,14 @@
   
   <div class="col-md-6">
    <div class="card" style="width: 120%">
-      <div class="card-header text-center text-info" ><h4>UPDATE HERE</h4></div>
+      <div class="card-header text-center text-info" ><h4>Update Here</h4></div>
      <form action="{% url 'update' data.id %}" method="POST">
           {% csrf_token %}
       <div class="card-body text-center">
-            <h3>ENTERED EXAM ID IS:&nbsp;{{ x.id }}</h3>
+            <h3>Entered Exam ID is:&nbsp;{{ x.id }}</h3>
                   
             <br>
-             <label class="inden">ROOM : </label>
+             <label class="inden">Room: </label>
               
                     <select name="room"  id="id">
                       <option value="{{data.room.roomno}}" selected>{{data.room.roomno}}</option>
@@ -23,7 +23,7 @@
                     </select>
            <br>
 
-          <label class="inden">FACULTY&nbsp;1:  </label> 
+          <label class="inden">Faculty&nbsp;1:  </label> 
                 
                       <select name="fname"  id="id">
                           <option value="{{data.fna1.fname}}" selected>{{ data.fna1.fname }}</option>
@@ -32,7 +32,7 @@
                         {% endfor %}
                       </select>
             <br>
-            <label class="inden">FACULTY&nbsp;2:  </label> 
+            <label class="inden">Faculty&nbsp;2:  </label> 
                 
                       <select name="fna2"   id="id">
                          <option value="{{data.fna2}}" selected>{{data.fna2}}</option>
@@ -41,20 +41,20 @@
                         {% endfor %}
                       </select>
             <br>
-      <label class="inden">SEMESTER :  </label>
+      <label class="inden">Semester:  </label>
        <input type="text" name="sem" value="{{x.semester}}" placeholder="enter semester ('1-2') ">
       <br>
-       <label class="inden">SUBJECT :</label>
+       <label class="inden">Course :</label>
        <input type="text" name="sub" value="{{x.subject}}" placeholder="enter subject ">
        <br>
-         <label class="inden">DEPARTMENT :</label>
+         <label class="inden">Year:</label>
 
          <select name = "dept" id ="dept">
            <option value="{{x.dept}}" selected>{{x.dept}}</option>
-           <option>CSE</option>
-           <option>ECE</option>
-           <option>EEE</option>
-           <option>IT</option>
+           <option>1st Year</option>
+           <option>2nd Year</option>
+           <option>3rd Year</option>
+           <option>4th</option>
          </select>
          
         

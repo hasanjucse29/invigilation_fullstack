@@ -31,23 +31,24 @@
 	    <li style="font-size: 24px;">EXAM-INVIGILATOR ASSIGNMENT SYSTEM</li>
 		<li >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
 	    
-		<li><a href="{% url 'send_email' %}">SEND&nbsp;EMAIL</a></li>
-		<li><a href="{% url 'timetable' %}">INVIGILATION DUTIES</a></li>
-		<li><a href="{% url 'home' %}">LOGOUT</a></li>
+		<li><a href="{% url 'home' %}">Home</a></li>
+		<li><a href="{% url 'send_email' %}">Send&nbsp;Email</a></li>
+		<li><a href="{% url 'timetable' %}">Invigilation Duties</a></li>
+		<li><a href="{% url 'home' %}">Logout</a></li>
 	
 	</ul>
 	    
 	</div>
 	<div class="sidebar">
 		<ul>
-			<li><a href="{% url 'addexam' %}">CREATE EXAM</a></li>
-			<li><a href="{% url 'adminpage' %}">ASSIGN FACULTY</a></li>
-			<li><a href="{% url 'addfac' %}">ADD FACULTY</a></li>
-			<li><a href="{% url 'addroom' %}">ADD ROOM</a></li>
-			<li><a href="{% url 'facstatus' %}">UPDATE FACULTY STATUS</a></li>
-			<li><a href="{% url 'roomstatus' %}">UPDATE ROOM STATUS</a></li>
-			<li><a href="{% url 'facconstraints' %}">VIEW FACULTY CONSTRAINTS</a></li>
-			<li><a href="{% url 'addtt' %}">ADD SCHEDULES</a></li>
+			<li><a href="{% url 'addexam' %}">Create Exam</a></li>
+			<li><a href="{% url 'adminpage' %}">Assign Faculty</a></li>
+			<li><a href="{% url 'addfac' %}">Add New Faculty</a></li>
+			<li><a href="{% url 'addroom' %}">Add Exam Room</a></li>
+			<li><a href="{% url 'facstatus' %}">Update Faculty Status</a></li>
+			<li><a href="{% url 'roomstatus' %}">Updtate Room Status</a></li>
+			<!-- <li><a href="{% url 'facconstraints' %}">View Faculty Constraints</a></li> -->
+			<!-- <li><a href="{% url 'addtt' %}">Add Schedules</a></li> -->
 		</ul>
 	</div>
 	<section>

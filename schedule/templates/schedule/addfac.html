@@ -6,30 +6,29 @@
   
     <div class="col-md-6">
      <div class="card" style="width: 120%">
-    <div class="card-header text-center text-success" ><h3>ADD&nbsp;FACULTY</h3></div>
+    <div class="card-header text-center text-success" ><h3>Add&nbsp;Faculty</h3></div>
 	<form action="{% url 'addfac' %}" method="POST">
 		{% csrf_token %}
      <div class="card-body text-center">
-     <label class="formspace">FACULTY&nbsp;NAME&nbsp;:</label>
-     <input type="text" placeholder="Enter faculty name" name="fname" required>
+     <label class="formspace">Faculty&nbsp;Name&nbsp;:</label>
+     <input type="text" placeholder="Enter Faculty Name" name="fname" required>
      <br>
-      <label class="formspace">FACULTY&nbsp;ID&nbsp;:</label>
-    <input type="number" placeholder="Enter faculty id" name="fid" required>
+      <label class="formspace">Faculty&nbsp;ID&nbsp;:</label>
+    <input type="number" placeholder="Enter Faculty Id" name="fid" required>
     <br>
-     <label class="formspace">EMAIL&nbsp;:</label>
-    <input type="email" placeholder="Enter email as ...@gvpcew.ac.in" name="fmail" required>
+     <label class="formspace">Email&nbsp;:</label>
+    <input type="email" placeholder="Enter Email as ...@gvpcew.ac.in" name="fmail" required>
     <br>
-     <label class="formspace">DEPARTMENT&nbsp;:</label>
+     <label class="formspace">Department&nbsp;:</label>
      <select name = "fdept" >
            <option>CSE</option>
-
-           <option>ECE</option>
-           <option>EEE</option>
-           <option>IT</option>
+           <option>Mathematics</option>
+           <option>Statistics</option>
+           <option>Economics</option>
          </select>
    
     <br>
-    <label class="formspace">STATUS&nbsp;:</label>
+    <label class="formspace">Status&nbsp;:</label>
     <select name = "st" >
            <option>y</option>
            <option>n</option>
@@ -39,7 +38,7 @@
    
 </div>
 <div class="card-footer text-center">
-	 <button class="btn btn-success">ADD&nbsp;FACULTY</button>
+	 <button class="btn btn-success">Add&nbsp;Faculty</button>
 	</div>
 </form>
 </div>

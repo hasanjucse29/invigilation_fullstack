@@ -4,11 +4,14 @@
 <table class="mytable">
   <thead>
     <tr>
-      <th>EXAM&nbsp;Id</th>
-     <th>EXAM&nbsp;&nbsp;DATE</th>
-     <th>EXAM&nbsp;&nbsp;TIME</th>
+      <th>Exam&nbsp;Id</th>
+     <th>Exam&nbsp;&nbsp;Date</th>
+     <th>Exam&nbsp;&nbsp;Time</th>
      <th>Invigilator&nbsp;1</th>
      <th>Invigilator&nbsp;2</th>
+     <th>Invigilator&nbsp;3</th>
+     <th>Invigilator&nbsp;4</th>
+     <th>Invigilator&nbsp;5</th>
      <th>ROOMNO</th>
      <th>SUBJECT</th>
      <th>DEPARTMENT</th>
@@ -22,18 +25,21 @@
   <tbody>
     {% for i in data %} 
     <tr>
-      <td data-column="EXAM_Id">{{ i.ex.id}}</td>
-      <td data-column="EXAM__DATE">{{ i.ex.exam_date }}</td>
-      <td data-column="TIME">{{ i.ex.exam_time }}</td>
+      <td data-column="Exam_Id">{{ i.ex.id}}</td>
+      <td data-column="Exam__Date">{{ i.ex.exam_date }}</td>
+      <td data-column="Time">{{ i.ex.exam_time }}</td>
       <td data-column="Invigilator&nbsp;1">{{ i.fna1.fname }}</td>
       <td data-column="Invigilator&nbsp;2">{{ i.fna2}}</td>
-      <td data-column="ROOMNO">{{ i.room.roomno }}</td>
-      <td data-column="SUBJECT">{{ i.ex.subject }}</td>
-      <td data-column="DEPARTMENT">{{ i.ex.dept }}</td>
-      <td data-column="SEMESTER">{{ i.ex.semester }}</td>
+      <td data-column="Invigilator&nbsp;3">{{ i.fna3}}</td>
+      <td data-column="Invigilator&nbsp;4">{{ i.fna4}}</td>
+      <td data-column="Invigilator&nbsp;5">{{ i.fna5}}</td>
+      <td data-column="Room No">{{ i.room.roomno }}</td>
+      <td data-column="Course Name">{{ i.ex.subject }}</td>
+      <td data-column="Year">{{ i.ex.dept }}</td>
+      <td data-column="Semester">{{ i.ex.semester }}</td>
       
-      <td data-column="EDIT"><a href="{% url 'update' i.id %}"><i class="fa fa-edit" style="font-size: 25px;color:#0d7377" ></i></a></td>
-      <td data-column="DELETE"><a href="{% url 'delete' i.id %}"><i class="fa fa-trash"  style="font-size:25px;color:#ff414d"></a></i></td>
+      <td data-column="Edit"><a href="{% url 'update' i.id %}"><i class="fa fa-edit" style="font-size: 25px;color:#0d7377" ></i></a></td>
+      <td data-column="Delete"><a href="{% url 'delete' i.id %}"><i class="fa fa-trash"  style="font-size:25px;color:#ff414d"></a></i></td>
       </tr>
         {% endfor %}
     </tbody>
@@ -41,7 +47,7 @@
      </table>
   
 <center>
-<a href="{% url 'timetable4' %}" <button class="btn btn-secondary" >PREVIEW&nbsp;TO&nbsp;DOWNLOAD</button></a>&nbsp;&nbsp;&nbsp;
-<a href="{% url 'send_email' %}" <button class="btn btn-success" >SEND&nbsp;EMAIL</button></a>
+<a href="{% url 'timetable4' %}" <button class="btn btn-secondary" >Preview&nbsp;To&nbsp;Download</button></a>&nbsp;&nbsp;&nbsp;
+<a href="{% url 'send_email' %}" <button class="btn btn-success" >Send &nbsp;Email</button></a>
 </center>
 {% endblock content %}

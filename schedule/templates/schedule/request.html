@@ -21,8 +21,8 @@
   <ul>
     <li style="font-size: 24px;">EXAM-INVIGILATOR ASSIGNMENT SYSTEM</li>
     <li >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-    <li><a href="{% url 'timetable2' %}">INVIGILATION DUTIES</a></li>
-    <li><a href="{% url 'home' %}">LOGOUT</a></li>
+    <li><a href="{% url 'timetable2' %}">Invigilation Duties</a></li>
+    <li><a href="{% url 'home' %}">Logout</a></li>
   </ul>
   </div>
   {% include 'schedule/messages.html' %}
@@ -33,16 +33,16 @@
   
     <div class="col-md-8">
      <div class="card">
-    <div class="card-header text-center text-success" ><h5>REQUEST ADMIN</h5></div>
+    <div class="card-header text-center text-success" ><h5>Request to Exam Committee</h5></div>
     <form action="{% url 'request' %}" method="POST">
     	{% csrf_token %}
     	 <div class="card-body text-center">
-        <label style="padding-right:13px ;width: 20% ;font-size:20px">Enter your id :</label>
+        <label style="padding-right:13px ;width: 20% ;font-size:20px">Enter Your Id :</label>
        <input type="number" name="id" placeholder="enter ID"><br>
-       <label style="padding-right:13px ;width: 20% ;font-size:20px">Enter Date you don't want to invigilate&nbsp; :</label>
+       <label style="padding-right:13px ;width: 20% ;font-size:20px">Enter Date You Don't Want to Invigilate&nbsp; :</label>
        <input type="date" name="date" placeholder="enter date ">
        <br><br>
-      <button class="btn btn-success"> SUBMIT</button>
+      <button class="btn btn-success"> Submit</button>
 
     	 </div>
     </form>

@@ -13,15 +13,15 @@
      <center><h3 style="color: white;">EXAM-INVIGILATOR ASSIGNMENT SYSTEM</h3></center>
 	<div class="loginbox">
 	<img src='/static/images/student.png' id="student">
-		<h1>LOGIN HERE</h1>
+		<h1>Login Here</h1>
 		<form action="{% url 'stud' %}" method="POST">
 			{% csrf_token %}
 			<div class="formbox">
-				<label>ROLL NUMBER</label>
+				<label>Roll Number</label>
 				<input type="varchar" name="rno" placeholder="Enter RollNumber">
 			</div>
 			<div class="formbox">
-				<label>USERNAME</label>
+				<label>Username</label>
 				<input type="text" name="uname" placeholder="Enter Username">
 			</div>
 			<input type="submit" name="submit" placeholder="LOGIN">

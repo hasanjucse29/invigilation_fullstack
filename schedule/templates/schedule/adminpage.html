@@ -7,12 +7,12 @@
   <div class="col-md-6" style="margin-right: 75px">
    <div class="card" >
       <div class="card-header text-center text-primary" >
-        <h4>Enter exam ID to assign faculty:</h4>(Or go to CREATE EXAM to create new exam)</div>
+        <h4>Enter Exam ID to Assign Faculty for the Exam:</h4>(Or Go to CREATE EXAM to Create New Exam)</div>
 
 		 <form action="{% url 'adminpage' %}" method="POST">
 		 	{% csrf_token %}
 		 	<div class="card-body text-center">
-		 		<label>EXAM&nbsp;ID:&nbsp;</label>
+		 		<label>Exam&nbsp;ID:&nbsp;</label>
           <input type="number" name="id">
           &nbsp;<br><br><button class="btn btn-dark">Continue-></button>
       </form>
@@ -24,7 +24,7 @@
 
   
   <div class="col-lg-3">    <!-----md-6,12-->
-  	<h4>AVAILABLE EXAM ID'S</h4>
+  	<h4>Available Exams</h4>
    <div class="card">
 
   	{% for i in data %}

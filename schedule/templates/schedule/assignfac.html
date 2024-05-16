@@ -6,17 +6,17 @@
   
   <div class="col-md-6">
    <div class="card" style="width:120%">
-      <div class="card-header text-center text-primary" ><h4>ASSIGN FACULTY HERE</h4></div>
+      <div class="card-header text-center text-primary" ><h4>Assign Faculty Here</h4></div>
      <form action="{% url 'assignfac' x.id %}" method="POST">
           {% csrf_token %}
       <div class="card-body text-center">
-            <h3>ENTERED EXAM ID IS:&nbsp;{{ x.id }}</h3>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>SUBJECT&nbsp;:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ x.subject }}<br>
-            <label >DEPARTMENT&nbsp;:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ x.dept }}<br>
+            <h3>Entered Exam ID is:&nbsp;{{ x.id }}</h3>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Course&nbsp;:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ x.subject }}<br>
+            <label >Year&nbsp;:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ x.dept }}<br>
             
                   
             <br>
-             <label class="inden">ROOM : </label>
+             <label class="inden">Room : </label>
               
                     <select name="room" id="id">
                       <option selected></option>
@@ -26,7 +26,7 @@
                     </select>
            <br>
 
-          <label class="inden">FACULTY&nbsp;1:  </label> 
+          <label class="inden">Faculty&nbsp;1:  </label> 
                 
                       <select name="fna1" id="id">
                          
@@ -35,7 +35,7 @@
                         {% endfor %}
                       </select>
             <br>
-            <label class="inden">FACULTY&nbsp;2:  </label> 
+            <label class="inden">Faculty&nbsp;2:  </label> 
                 
                       <select name="fna2" id="id">
                        <!---<option selected></option>-->
@@ -67,7 +67,7 @@
     <div class="card-footer text-center" >
       <a href="{% url 'adminpage' %}" <button class="btn btn-warning" >Go&nbsp;Back</button></a>
       <button class="btn btn-primary">ADD</button>&nbsp; &nbsp;  &nbsp;
-      <a href="{% url 'timetable' %}" <button class="btn btn-info" >PREVIEW</button></a>
+      <a href="{% url 'timetable' %}" <button class="btn btn-info" >Preview</button></a>
     </div>
        
     </form>

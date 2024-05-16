@@ -4,8 +4,8 @@
 <div id="tab">
 <table class="mytable">
   <center>
-    <h3>GAYATRI VIDYA PARISHAD COLLEGE OF ENGINEERING FOR WOMEN</h3>
-    <h3>MADHURWADA::VISAKHAPATNAM</h3>
+    <h3>Department of Computer Scienceand Engineering</h3>
+    <h3>Jahangirnagar University</h3>
     <h3>{{ h.heading }}</h3>
   </center>
   <thead>
@@ -14,24 +14,30 @@
      <th>EXAM&nbsp;TIME</th>
      <th>Invigilator&nbsp;1</th>
      <th>Invigilator&nbsp;2</th>
-     <th>ROOMNO</th>
-     <th>SUBJECT</th>
-     <th>DEPARTMENT</th>
-     <th>SEMESTER</th>
+     <th>Invigilator&nbsp;3</th>
+     <th>Invigilator&nbsp;4</th>
+     <th>Invigilator&nbsp;5</th>
+     <th>Room No</th>
+     <th>Course Name</th>
+     <th>Year</th>
+     <th>Semester</th>
        
     </tr>
   </thead>
   <tbody>
     {% for i in data %} 
     <tr>
-      <td data-column="EXAM&nbsp;&nbsp;DATE">{{ i.ex.exam_date }}</td>
-      <td data-column="TIME">{{ i.ex.exam_time }}</td>
+      <td data-column="Exam&nbsp;&nbsp;Date">{{ i.ex.exam_date }}</td>
+      <td data-column="Time">{{ i.ex.exam_time }}</td>
       <td data-column="Invigilator&nbsp;1">{{ i.fna1.fname }}</td>
       <td data-column="Invigilator&nbsp;2">{{ i.fna2}}</td>
-      <td data-column="ROOMNO">{{ i.room.roomno }}</td>
-      <td data-column="SUBJECT">{{ i.ex.subject }}</td>
-      <td data-column="DEPARTMENT">{{ i.ex.dept }}</td>
-      <td data-column="SEMESTER">{{ i.ex.semester }}</td>
+      <td data-column="Invigilator&nbsp;3">{{ i.fna3}}</td>
+      <td data-column="Invigilator&nbsp;4">{{ i.fna4}}</td>
+      <td data-column="Invigilator&nbsp;5">{{ i.fna5}}</td>
+      <td data-column="Room No">{{ i.room.roomno }}</td>
+      <td data-column="Course Name">{{ i.ex.subject }}</td>
+      <td data-column="Year">{{ i.ex.dept }}</td>
+      <td data-column="Semester">{{ i.ex.semester }}</td>
      
     </tr>
     {% endfor %}
@@ -41,7 +47,7 @@
 </div>
 <center>
   
-  <button  class="btn btn-success" onclick="myApp.printTable()">DOWNLOAD</button>
+  <button  class="btn btn-success" onclick="myApp.printTable()">Download</button>
 </center>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.22/pdfmake.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>

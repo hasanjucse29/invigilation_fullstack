@@ -4,17 +4,17 @@
 <div id="tab">
 <table class="mytable">
   <center>
-    <h3>GAYATRI VIDYA PARISHAD COLLEGE OF ENGINEERING FOR WOMEN</h3>
-    <h3>MADHURWADA::VISAKHAPATNAM</h3>
+    <h3>Department of Computer Scienceand Engineering</h3>
+    <h3>Jahangirnagar University</h3>
     <h3 >{{ h.heading }} </h3>
   </center>
   <thead>
     <tr>
-     <th>EXAM&nbsp;&nbsp;DATE</th>
-     <th>EXAM&nbsp;TIME</th>
-     <th>SUBJECT</th>
-     <th>DEPARTMENT</th>
-     <th>SEMESTER</th>
+     <th>Exam&nbsp;&nbsp;Date</th>
+     <th>Exam&nbsp;Time</th>
+     <th>Course Name</th>
+     <th>Year</th>
+     <th>Semester</th>
     </tr>
   </thead>
   <tbody>
@@ -23,8 +23,8 @@
       <td >{{ i.exam_date }}</td>
       <td >{{ i.exam_time }}</td> 
       <td >{{ i.subject }}</td>
-      <td data-column="DEPARTMENT">{{ i.dept }}</td>
-      <td data-column="SEMESTER">{{ i.semester }}</td>  
+      <td data-column="Year">{{ i.dept }}</td>
+      <td data-column="Semester">{{ i.semester }}</td>  
     </tr>
     {% endfor %}
   </tbody>
