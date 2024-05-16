@@ -28,7 +28,7 @@ SECRET_KEY = '0)esn8%*$tws9^p=@xbo*p)&(3vjq+m*ovw(lj*so=01172zpl'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Application definition
 
@@ -81,7 +81,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql', 
         'NAME': 'exam_invigilator', # Database name
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD': 'Hasan123@',
         'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
         'PORT': '3306',
     }

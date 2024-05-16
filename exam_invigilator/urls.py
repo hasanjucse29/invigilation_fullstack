@@ -19,7 +19,7 @@ from schedule import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/',views.home,name='home'),
+    path('',views.home,name='home'),
     path('first/',views.first,name='first'),
     path('feedback/',views.feedback,name='feedback'),
     path('timetable/',views.timetable,name='timetable'),
